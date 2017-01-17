@@ -14,16 +14,16 @@
     
 
     
-    <meta name="description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read b">
+    <meta name="description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm or dindn’t have too much time to read books.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Kindleear Setup">
 <meta property="og:url" content="http://jeffpeng.xyz/2017/01/17/Kindleear/index.html">
 <meta property="og:site_name" content="Jeff">
-<meta property="og:description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read b">
-<meta property="og:updated_time" content="2017-01-17T06:44:01.000Z">
+<meta property="og:description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm or dindn’t have too much time to read books.">
+<meta property="og:updated_time" content="2017-01-17T09:08:55.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Kindleear Setup">
-<meta name="twitter:description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read b">
+<meta name="twitter:description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm or dindn’t have too much time to read books.">
 
     
     <link rel="alternative" href="/atom.xml" title="Jeff" type="application/atom+xml">
@@ -102,8 +102,8 @@
 		
 		</div>
 		
-		<p>&emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read books. <a id="more"></a>While others may want to use their kindles not just to read books or magzines but other stuffs like news, but web surf can be hard on kindle cause it’s low refresh rate. So how can we make more use of our kindles without wasting our precious time. The answer is using kindle to view some news, blogs and other articals you usually view on your mobiles or computers. But now you would wonder how cause kindle’s low refresh rate as we speak before. The solution is <strong>KINDLEEAR</strong>. </p>
-<h1 id="Introudction">Introudction</h1><p>Kindleear is a opensource application running in Google app engine, it can transfer your rss to mobi files by using python, then automatically delivery to your kindles, it also has multilanguages supported.</p>
+		<p>&emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm or dindn’t have too much time to read books. <a id="more"></a>While others may want to use their kindles not just to read books or magzines but other stuffs like news, but web surfing can be hard on kindle cause it’s low refresh rate. So how can we make more use of our kindles without wasting our precious time. The answer is using kindle to view some news, blogs and other articals you usually view on your mobiles or computers. But now you would wonder how cause kindle’s low refresh rate as we speak before. The solution is <strong>KINDLEEAR</strong>. </p>
+<h1 id="Introudction">Introudction</h1><p>&emsp; Kindleear is a opensource application running in Google app engine, it can transfer your rss to mobi files by using python, then automatically delivery to your kindles, it also has multilanguages supported.</p>
 <p><strong>The features included:</strong> </p>
 <ul>
 <li>Support calibre-like recipe file to aggress unlimited RSS or webpage.</li>
@@ -119,8 +119,8 @@
 <h2 id="Install_Google_Cloud_SDK">Install Google Cloud SDK</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"># <span class="keyword">open</span> your teminal (Mac ,Linux, Windows).</div><div class="line"></div><div class="line">$ wget http<span class="variable">s:</span>//<span class="keyword">dl</span>.google.<span class="keyword">com</span>/<span class="keyword">dl</span>/cloudsdk/channels/rapid/downloads/google-cloud-sdk-<span class="number">139.0</span>.<span class="number">1</span>-darwin-x86_64.tar.gz</div><div class="line"># this <span class="keyword">is</span> Google Cloud SDK <span class="keyword">for</span> Mac download address, you can <span class="keyword">find</span> Linux <span class="built_in">or</span> Windows versions <span class="keyword">on</span> thi<span class="variable">s:</span> http<span class="variable">s:</span>//cloud.google.<span class="keyword">com</span>/sdk/docs/</div><div class="line"></div><div class="line">$ tar -xzvf google-cloud-sdk-<span class="number">139.0</span>.<span class="number">1</span>-darwin-x86_64.tar.gz</div><div class="line"></div><div class="line">$ <span class="keyword">cd</span> google-cloud-sdk</div><div class="line">$ chmod +<span class="keyword">x</span> install.<span class="keyword">sh</span></div><div class="line">$ ./install.<span class="keyword">sh</span></div><div class="line"></div><div class="line"># <span class="keyword">if</span> you build this <span class="keyword">on</span> windows, </div><div class="line">$ dir google-cloud-sdk</div><div class="line">$ install.bat</div><div class="line">$ hit the Enter</div><div class="line"></div><div class="line">$ <span class="built_in">type</span> <span class="string">"yes"</span> when you meet the questions.</div><div class="line">$ gcloud components install app-engine-<span class="keyword">python</span></div></pre></td></tr></table></figure>
 <h2 id="Upload_kindleear">Upload kindleear</h2><ul>
 <li>Download kindleear from <a href="https://codeload.github.com/cdhigh/KindleEar/zip/master" target="_blank" rel="external">https://codeload.github.com/cdhigh/KindleEar/zip/master</a></li>
-<li>Unzip it and move the fold to ~/Apllication
-open the fold and modify some variables as follow:<table>
+<li>Unzip it and move the fold to ~/Apllication</li>
+<li>open the fold and modify some variables as follow:<table>
 <tr>
    <td><b>File</b></td>
    <td nowrap="nowrap"><b>variable changed</b></td>
@@ -156,7 +156,7 @@ open the fold and modify some variables as follow:<table>
 </ul>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd ~/Application</div><div class="line">$ python appcfg<span class="selector-class">.py</span> update KindleEarFolder\app<span class="selector-class">.yaml</span> KindleEarFolder\module-worker<span class="selector-class">.yaml</span></div><div class="line">$ python appcfg<span class="selector-class">.py</span> update KindleEarFolder</div></pre></td></tr></table></figure>
 <ul>
-<li>After finished, you can open the website ‘<a href="http://appid.appspot.com" target="_blank" rel="external">http://appid.appspot.com</a>‘ (<strong>appid is the name of your application</strong>).</li>
+<li>After finished, you can open the website <a href="http://appid.appspot.com" target="_blank" rel="external">http://appid.appspot.com</a> (<strong>appid is the name of your application</strong>).</li>
 <li>The initial <strong>username is ‘admin’, password is ‘admin’,</strong> please change the password immediately after first login. </li>
 <li>You can create multiple accounts, but since your google app engine account is a free version with limited resourses, so I do not recommend you to create too many accouts.</li>
 <li>Now you can login into your account and add your rss. <strong>Enjoy It</strong> !</li>
@@ -166,7 +166,7 @@ open the fold and modify some variables as follow:<table>
 </ul>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> [ <span class="_">-f</span> /Users/jeff/Downloads/google-cloud-sdk/path.bash.inc ]; <span class="keyword">then</span></div><div class="line">	<span class="built_in">source</span> <span class="string">'/Users/jeff/Downloads/google-cloud-sdk/path.bash.inc'</span></div><div class="line"><span class="keyword">fi</span></div><div class="line"><span class="keyword">if</span> [ <span class="_">-f</span> /Users/jeff/Downloads/google-cloud-sdk/completion.bash.inc ]; <span class="keyword">then</span></div><div class="line">	<span class="built_in">source</span> <span class="string">'/Users/jeff/Downloads/google-cloud-sdk/completion.bash.inc'</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
 <ul>
-<li><strong>“wrong SRC_EMAIL” in Logs:</strong><br>&emsp; GO <a href="https://console.cloud.google.com/appengine/settings?project" target="_blank" rel="external">https://console.cloud.google.com/appengine/settings?project</a>, add your gmail account in Email API authorized senders</li>
+<li><strong>“wrong SRC_EMAIL” in Logs:</strong><br>&emsp; GO <a href="https://console.cloud.google.com/appengine/settings?project" target="_blank" rel="external">https://console.cloud.google.com/appengine/settings?project</a>, add your gmail account in <strong>Email API authorized senders</strong></li>
 <li>For more details, go project site: <a href="https://github.com/cdhigh/KindleEar" target="_blank" rel="external">https://github.com/cdhigh/KindleEar</a></li>
 </ul>
   
