@@ -1,0 +1,569 @@
+
+ <!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="G2KttJ7U9AkekF39ulpn-T90xPtV2i1ycnuFto-TJqk" />
+  <meta name="google-site-verification" content="bE5z4-LTpuH0tHW74igfMToZylDxWgyMfu3eHG2YMOw" />
+  <meta name="baidu-site-verification" content="9r1RL1P5vD" />
+  
+    <title>Kindleear Setup | Jeff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    
+    <meta name="author" content="Jeff Peng">
+    
+
+    
+    <meta name="description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read b">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Kindleear Setup">
+<meta property="og:url" content="http://jeffpeng.xyz/2017/01/17/Kindleear/index.html">
+<meta property="og:site_name" content="Jeff">
+<meta property="og:description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read b">
+<meta property="og:updated_time" content="2017-01-17T06:44:01.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kindleear Setup">
+<meta name="twitter:description" content="&amp;emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read b">
+
+    
+    <link rel="alternative" href="/atom.xml" title="Jeff" type="application/atom+xml">
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="apple-touch-icon" href="/img/jacman.jpg">
+    <link rel="apple-touch-icon-precomposed" href="/img/jacman.jpg">
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+  <body>
+    <header>
+      
+<div>
+		
+			<div id="imglogo">
+				<a href="/"><img src="/img/logo.png" alt="Jeff" title="Jeff"/></a>
+			</div>
+			
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="Jeff">Jeff</a></h1>
+				<h2 class="blog-motto"></h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					<ul>
+					 
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/about">About</a></li>
+					
+					<li>
+ 					
+					<form class="search" action="/search/index.html" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="search" id="search" autocomplete="off" name="q" maxlength="20" placeholder="Search" />
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/2017/01/17/Kindleear/" title="Kindleear Setup" itemprop="url">Kindleear Setup</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="Jeff Peng" target="_blank" itemprop="author">Jeff Peng</a>
+		
+  <p class="article-time">
+    <time datetime="2017-01-17T02:21:45.000Z" itemprop="datePublished"> Published 2017-01-17</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">Contents</strong>
+		
+			<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introudction"><span class="toc-number">1.</span> <span class="toc-text">Introudction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Build"><span class="toc-number">2.</span> <span class="toc-text">Build</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Install_Google_Cloud_SDK"><span class="toc-number">2.1.</span> <span class="toc-text">Install Google Cloud SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Upload_kindleear"><span class="toc-number">2.2.</span> <span class="toc-text">Upload kindleear</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TroubleShooting"><span class="toc-number">3.</span> <span class="toc-text">TroubleShooting</span></a></li></ol>
+		
+		</div>
+		
+		<p>&emsp; Nowdays, many people have their kindles, but lots of them tended to throw their machines in their lockers after losting their enthusiasm in their kindles or dindn’t have too much time to read books. <a id="more"></a>While others may want to use their kindles not just to read books or magzines but other stuffs like news, but web surf can be hard on kindle cause it’s low refresh rate. So how can we make more use of our kindles without wasting our precious time. The answer is using kindle to view some news, blogs and other articals you usually view on your mobiles or computers. But now you would wonder how cause kindle’s low refresh rate as we speak before. The solution is <strong>KINDLEEAR</strong>. </p>
+<h1 id="Introudction">Introudction</h1><p>Kindleear is a opensource application running in Google app engine, it can transfer your rss to mobi files by using python, then automatically delivery to your kindles, it also has multilanguages supported.</p>
+<p><strong>The features included:</strong> </p>
+<ul>
+<li>Support calibre-like recipe file to aggress unlimited RSS or webpage.</li>
+<li>Support custom RSS, only title/url are needed, don’t need to program.</li>
+<li>With account management, support several kindles.</li>
+<li>Generate periodical mobi/epub file with images.</li>
+<li>Deliver news feeds to your kindle dialy automatically.</li>
+<li>Website support multi-languages.</li>
+<li>Powerful and convenient mail-transfering service.</li>
+<li>Integration with Evernote/Pocket/Instapape</li>
+</ul>
+<h1 id="Build">Build</h1><p>So let’s look how to build it on your google app engine.</p>
+<h2 id="Install_Google_Cloud_SDK">Install Google Cloud SDK</h2><figure class="highlight vim"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"># <span class="keyword">open</span> your teminal (Mac ,Linux, Windows).</div><div class="line"></div><div class="line">$ wget http<span class="variable">s:</span>//<span class="keyword">dl</span>.google.<span class="keyword">com</span>/<span class="keyword">dl</span>/cloudsdk/channels/rapid/downloads/google-cloud-sdk-<span class="number">139.0</span>.<span class="number">1</span>-darwin-x86_64.tar.gz</div><div class="line"># this <span class="keyword">is</span> Google Cloud SDK <span class="keyword">for</span> Mac download address, you can <span class="keyword">find</span> Linux <span class="built_in">or</span> Windows versions <span class="keyword">on</span> thi<span class="variable">s:</span> http<span class="variable">s:</span>//cloud.google.<span class="keyword">com</span>/sdk/docs/</div><div class="line"></div><div class="line">$ tar -xzvf google-cloud-sdk-<span class="number">139.0</span>.<span class="number">1</span>-darwin-x86_64.tar.gz</div><div class="line"></div><div class="line">$ <span class="keyword">cd</span> google-cloud-sdk</div><div class="line">$ chmod +<span class="keyword">x</span> install.<span class="keyword">sh</span></div><div class="line">$ ./install.<span class="keyword">sh</span></div><div class="line"></div><div class="line"># <span class="keyword">if</span> you build this <span class="keyword">on</span> windows, </div><div class="line">$ dir google-cloud-sdk</div><div class="line">$ install.bat</div><div class="line">$ hit the Enter</div><div class="line"></div><div class="line">$ <span class="built_in">type</span> <span class="string">"yes"</span> when you meet the questions.</div><div class="line">$ gcloud components install app-engine-<span class="keyword">python</span></div></pre></td></tr></table></figure>
+<h2 id="Upload_kindleear">Upload kindleear</h2><ul>
+<li>Download kindleear from <a href="https://codeload.github.com/cdhigh/KindleEar/zip/master" target="_blank" rel="external">https://codeload.github.com/cdhigh/KindleEar/zip/master</a></li>
+<li>Unzip it and move the fold to ~/Apllication
+open the fold and modify some variables as follow:<table>
+<tr>
+   <td><b>File</b></td>
+   <td nowrap="nowrap"><b>variable changed</b></td>
+   <td><b>Description</b></td>
+</tr>
+<tr>
+   <td>app.yaml</td>
+   <td>application</td>
+   <td>Your Apllication ID</td>
+</tr>
+<tr>
+   <td>module-worker.ymal</td>
+   <td>application</td>
+   <td>Your Apllication ID</td>
+</tr>
+<tr>
+   <td>config.py</td>
+   <td>SRC_EMAIL</td>
+   <td>Your Gmail Address</td>
+</tr>
+<tr>
+   <td>config.py</td>
+   <td>DOMAIN</td>
+   <td>appid@appspot.com</td>
+</tr>
+<tr>
+   <td>config.py</td>
+   <td>TIMEZONE</td>
+   <td>Your Timezone</td>
+</tr><br></table>
+
+</li>
+</ul>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ cd ~/Application</div><div class="line">$ python appcfg<span class="selector-class">.py</span> update KindleEarFolder\app<span class="selector-class">.yaml</span> KindleEarFolder\module-worker<span class="selector-class">.yaml</span></div><div class="line">$ python appcfg<span class="selector-class">.py</span> update KindleEarFolder</div></pre></td></tr></table></figure>
+<ul>
+<li>After finished, you can open the website ‘<a href="http://appid.appspot.com" target="_blank" rel="external">http://appid.appspot.com</a>‘ (<strong>appid is the name of your application</strong>).</li>
+<li>The initial <strong>username is ‘admin’, password is ‘admin’,</strong> please change the password immediately after first login. </li>
+<li>You can create multiple accounts, but since your google app engine account is a free version with limited resourses, so I do not recommend you to create too many accouts.</li>
+<li>Now you can login into your account and add your rss. <strong>Enjoy It</strong> !</li>
+</ul>
+<h1 id="TroubleShooting">TroubleShooting</h1><ul>
+<li><strong>“Command not found: gcloud” :</strong><br>&emsp; when execute “gcloud components install app-engine-python during Installing Google Cloud SDK, just execute “./install.sh”(MAC or Linux) or “install.bat”(Windows) again and make sure the ‘gcloud’ command being wtritten to the right file（like .bash_profile）, or paste by yourself:</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">if</span> [ <span class="_">-f</span> /Users/jeff/Downloads/google-cloud-sdk/path.bash.inc ]; <span class="keyword">then</span></div><div class="line">	<span class="built_in">source</span> <span class="string">'/Users/jeff/Downloads/google-cloud-sdk/path.bash.inc'</span></div><div class="line"><span class="keyword">fi</span></div><div class="line"><span class="keyword">if</span> [ <span class="_">-f</span> /Users/jeff/Downloads/google-cloud-sdk/completion.bash.inc ]; <span class="keyword">then</span></div><div class="line">	<span class="built_in">source</span> <span class="string">'/Users/jeff/Downloads/google-cloud-sdk/completion.bash.inc'</span></div><div class="line"><span class="keyword">fi</span></div></pre></td></tr></table></figure>
+<ul>
+<li><strong>“wrong SRC_EMAIL” in Logs:</strong><br>&emsp; GO <a href="https://console.cloud.google.com/appengine/settings?project" target="_blank" rel="external">https://console.cloud.google.com/appengine/settings?project</a>, add your gmail account in Email API authorized senders</li>
+<li>For more details, go project site: <a href="https://github.com/cdhigh/KindleEar" target="_blank" rel="external">https://github.com/cdhigh/KindleEar</a></li>
+</ul>
+  
+	</div>
+		<footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/Programme/">Programme</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/Kindle/">Kindle</a>
+  </div>
+
+</div>
+
+
+
+	<div class="article-share" id="share">
+	
+	  <div data-url="http://jeffpeng.xyz/2017/01/17/Kindleear/" data-title="Kindleear Setup | Jeff" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
+
+</footer>
+
+   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+
+<div class="next">
+<a href="/2015/11/23/zash/"  title="It&#39;s time to move to zsh">
+ <strong>下一篇：</strong><br/> 
+ <span>It&#39;s time to move to zsh
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+<section id="comments" class="comment">
+	<div class="ds-thread" data-thread-key="2017/01/17/Kindleear/" data-title="Kindleear Setup" data-url="http://jeffpeng.xyz/2017/01/17/Kindleear/"></div>
+</section>
+
+
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">Contents</strong>
+ 
+ <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Introudction"><span class="toc-number">1.</span> <span class="toc-text">Introudction</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Build"><span class="toc-number">2.</span> <span class="toc-text">Build</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Install_Google_Cloud_SDK"><span class="toc-number">2.1.</span> <span class="toc-text">Install Google Cloud SDK</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Upload_kindleear"><span class="toc-number">2.2.</span> <span class="toc-text">Upload kindleear</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TroubleShooting"><span class="toc-number">3.</span> <span class="toc-text">TroubleShooting</span></a></li></ol>
+ 
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">Categories</p>
+		<ul>
+		
+		  
+			<li><a href="/categories/Computer-Skills/" title="Computer Skills">Computer Skills<sup>4</sup></a></li>
+		  
+		
+		  
+			<li><a href="/categories/Programme/" title="Programme">Programme<sup>4</sup></a></li>
+		  
+		
+		</ul>
+</div>
+
+
+  
+<div class="tagslist">
+	<p class="asidetitle">Tags</p>
+		<ul class="clearfix">
+		
+			
+				<li><a href="/tags/Python/" title="Python">Python<sup>2</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Kindle/" title="Kindle">Kindle<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/VPN/" title="VPN">VPN<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/shadowsocks/" title="shadowsocks">shadowsocks<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Zsh/" title="Zsh">Zsh<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/FTP/" title="FTP">FTP<sup>1</sup></a></li>
+			
+		
+		</ul>
+</div>
+
+
+  <div class="linkslist">
+  <p class="asidetitle">Links</p>
+    <ul>
+        
+          <li>
+            
+            	<a href="https://twitter.com/jefflaughing" target="_blank" title="This  is my twitter  account">Twitter</a>
+            
+          </li>
+        
+    </ul>
+</div>
+
+  
+
+
+  <div class="rsspart">
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+</div>
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer" >
+	
+	<div class="line">
+		<span></span>
+		<div class="author"></div>
+	</div>
+	
+	
+	<section class="info">
+		<p> Hello ,I&#39;m Jeff. <br/>
+			This is my blog.</p>
+	</section>
+	 
+	<div class="social-font" class="clearfix">
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</div>
+			
+		
+
+		<p class="copyright">
+		Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/wuchong/jacman" target="_blank" title="Jacman">Jacman</a> © 2017 
+		
+		<a href="/about" target="_blank" title="Jeff Peng">Jeff Peng</a>
+		
+		
+		</p>
+</div>
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv" style='display:none'>Viewing <span id="busuanzi_value_site_pv"></span> times,</span>
+<!-- 不蒜子计数初始值纠正 -->
+    <script >
+        $(document).ready(function() {
+            var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+            var countOffset = 20000;  // 初始化首次数据
+           function fixCount() {                   
+             if ($("#busuanzi_container_site_pv").css("display") != "none")
+               {
+                  $("#busuanzi_value_site_pv").html(parseInt($("#busuanzi_value_site_pv").html()) + countOffset); // 加上初始数据 
+                  clearInterval(int); // 停止检测
+             }  
+         }           
+        });
+    </script> 
+<span id="busuanzi_container_site_uv" style='display:none'>Vistor Count: <span id="busuanzi_value_site_uv"></span></span>
+<!-- 不蒜子计数初始值纠正 -->
+    <script >
+        $(document).ready(function() {
+            var int = setInterval(fixCount, 50);  // 50ms周期检测函数
+            var countOffset = 20000;  // 初始化首次数据
+           function fixCount() {                   
+             if ($("#busuanzi_container_site_uv").css("display") != "none")
+               {
+                  $("#busuanzi_value_site_uv").html(parseInt($("#busuanzi_value_site_uv").html()) + countOffset); // 加上初始数据 
+                  clearInterval(int); // 停止检测
+             }  
+         }           
+        });
+    </script> </footer>
+    <script src="/js/jquery-2.0.3.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+  
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else{
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  c.click(function(){
+    ta.css('display', 'block').addClass('fadeIn');
+  });
+  o.click(function(){
+    ta.css('display', 'none');
+  });
+  $(window).scroll(function(){
+    ta.css("top",Math.max(140,320-$(this).scrollTop()));
+  });
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#nothing"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+<script type="text/javascript">
+  var duoshuoQuery = {short_name:"feika"};
+  (function() {
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0] 
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
+  })();
+</script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+<!-- Analytics Begin -->
+
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-57515456-1', 'null');  
+ga('send', 'pageview');
+</script>
+
+
+
+
+
+<!-- Analytics End -->
+
+<!-- Totop Begin -->
+
+	<div id="totop">
+	<a title="Back to Top"><img src="/img/scrollup.png"/></a>
+	</div>
+	<script src="/js/totop.js"></script>
+
+<!-- Totop End -->
+
+<!-- MathJax Begin -->
+<!-- mathjax config similar to math.stackexchange -->
+
+
+<!-- MathJax End -->
+
+<!-- Tiny_search Begin -->
+
+<!-- Tiny_search End -->
+
+  </body>
+</html>
